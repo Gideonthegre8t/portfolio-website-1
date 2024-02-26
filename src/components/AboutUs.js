@@ -1,5 +1,6 @@
 import React from "react";
 import graphImage2 from "../assets/images/white-graph-image.png";
+import graphImage2phone from "../assets/images/white-graph-image-phone.png"
 import rightArrow from "../assets/images/right-arrow.png";
 
 function AboutUs() {
@@ -8,7 +9,8 @@ function AboutUs() {
       <div className="about-content">
         <div className="about-us-text">
           <h3 className="about-header">ABOUT US</h3>
-          <img src={graphImage2} alt="graph" />
+          <img className="white-graph" src={graphImage2} alt="graph" />
+          <img className="white-graph-phone" src={graphImage2phone} alt="graph" />
           <p className="about-us-text-1">FINANCIAL TECHNOLOGY ADVISORS</p>
           <p className="about-us-text-2">
             Since founding Financial Technology Advisors in 2014 we have
@@ -59,7 +61,7 @@ function AboutUs() {
             </p>
             <p className="read-more-text">
               READ MORE{" "}
-              <img className="right-arrow" src={rightArrow} alt="arrow" />{" "}
+              <img className="right-arrow" src={rightArrow} alt="arrow" />
             </p>
           </div>
           <div className="recent-news-paragragh">
@@ -68,7 +70,7 @@ function AboutUs() {
             </p>
             <p className="read-more-text">
               READ MORE{" "}
-              <img className="right-arrow" src={rightArrow} alt="arrow" />{" "}
+              <img className="right-arrow" src={rightArrow} alt="arrow" />
             </p>
           </div>
           <div className="recent-news-paragragh">
@@ -77,7 +79,7 @@ function AboutUs() {
             </p>
             <p className="read-more-text">
               READ MORE{" "}
-              <img className="right-arrow" src={rightArrow} alt="arrow" />{" "}
+              <img className="right-arrow" src={rightArrow} alt="arrow" />
             </p>
           </div>
         </div>

@@ -34,7 +34,7 @@ const ReachOutForm = () => {
           <p className="nothing-selected">
             Nothing selected <img className="arrow" src={arrow} alt="arrow" />
           </p>
-          <div className="line" />
+          <div className="nothing-line" />
 
           <div className="input-container">
             <div className="name-tab">

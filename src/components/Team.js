@@ -2,6 +2,7 @@ import React from "react";
 import teamMember from "../assets/images/team-member.png";
 import teamWallpaper from "../assets/images/office-image.png";
 import teamWallpaperPhone from "../assets/images/office-image-phone-size.png";
+import teamMemberphone from "../assets/images/team-member-phone-size.png";
 
 function Team() {
   return (
@@ -30,7 +31,9 @@ function Team() {
         <div className="contact-frame">
           <div className="photo-container">
             <div className="photo-frame">
-              <img src={teamMember} alt="teammate" />
+              <img className="team-image" src={teamMember} alt="teammate" />
+              <img className="team-image-phone" src={teamMemberphone} alt="teammate" />
+
             </div>
           </div>
 
@@ -44,7 +47,9 @@ function Team() {
         <div className="contact-frame">
           <div className="photo-container">
             <div className="photo-frame">
-              <img src={teamMember} alt="teammate" />
+              <img className="team-image" src={teamMember} alt="teammate" />
+              <img className="team-image-phone" src={teamMemberphone} alt="teammate" />
+
             </div>
           </div>
 
@@ -58,7 +63,9 @@ function Team() {
         <div className="contact-frame">
           <div className="photo-container">
             <div className="photo-frame">
-              <img src={teamMember} alt="teammate" />
+              <img className="team-image" src={teamMember} alt="teammate" />
+              <img className="team-image-phone" src={teamMemberphone} alt="teammate" />
+
             </div>
           </div>
 

@@ -13,6 +13,7 @@ body {
   height: 243rem;
 }
 .header-container {
+  margin: 0 auto;
   width: 100%;
   height: 33.5rem;
   background: #1c0e0eb2;
@@ -220,6 +221,10 @@ body {
   text-align: center;
   margin: 0 auto;
   margin-top: 7rem;
+}
+
+.black-graph-phone{
+  display: none;
 }
 
 .about2-container {
@@ -462,6 +467,10 @@ body {
   color: #949494;
 }
 
+.team-image-phone{
+  display: none;
+}
+
 .contact-container {
   display: flex;
 }
@@ -469,7 +478,7 @@ body {
 .contact {
   text-align: center;
   color: #ffffff;
-  font-family: Inter;
+  font-family: 'inter';
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 0.9375rem;
@@ -536,7 +545,7 @@ body {
   text-align: left;
   color: #575252;
 }
-.line {
+.nothing-line {
   margin: 0px;
   border-bottom: 1px solid #575252;
 }
@@ -643,6 +652,10 @@ input {
   text-align: left;
 }
 
+.white-graph-phone{
+  display: none;
+}
+
 .right-arrow {
   margin-right: 0.3rem;
 }
@@ -673,8 +686,8 @@ input {
 @media (max-width: 600px) {
   body {
     margin: 0 auto;
-    width: 430px;
-    height: 6302px;
+    width: 452px;
+    height: 6200px;
     display: flex;
     flex-direction: column;
   }
@@ -753,6 +766,7 @@ input {
     letter-spacing: 0.05em;
     text-align: center;
     margin: 0 auto;
+    margin-top: -6rem;
     z-index: +1;
   }
   .header-content2 {
@@ -806,7 +820,13 @@ input {
 
   .about1-text1 {
     text-align: center;
+ 
+font-size: 20px;
+font-weight: 500;
+line-height: 28px;
+letter-spacing: 0.05em;
   }
+
   .about1-text2,
   .about1-text3,
   .about1-text4 {
@@ -826,23 +846,36 @@ input {
     width: 383px;
     height: 259px;
     margin: 0 auto;
-    margin-top: -5rem;
+    margin-top: -4rem;
   }
 
   .about1-story2-txt {
+  width: 284.79px;
     font-family: Sarpanch;
     font-size: 16px;
     font-weight: 500;
     line-height: 30px;
     letter-spacing: 0.05em;
-    padding: 2rem;
+    padding: 3rem;
+    color: #fff;
+    text-align: left;
   }
+
+
+
+  .black-graph{
+    display: none;
+  }
+  .black-graph-phone{
+    display: block;
+  }
+  
 
   .about1-image {
     position: relative;
     width: 383px;
     height: 259px;
-    bottom: 324px;
+    bottom: 355px;
   }
   .about2-container {
     margin: 34px;
@@ -903,9 +936,9 @@ input {
 
   .advice-container {
     display: inline-block;
-    width: 426px;
+    width: 452px;
     height: 200px;
-    margin-top: -1rem;
+    margin-top: -3rem;
     justify-content: center;
     padding: 0px;
     gap: 1.5rem;
@@ -971,6 +1004,7 @@ input {
     height: 900px;
     margin: 0 auto;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     gap: 5.7rem;
   }
 
@@ -1032,7 +1066,7 @@ input {
 
   .team-container {
     flex-direction: column;
-    width: 426px;
+    width: 452px;
     height: 1412px;
     background: #f80606;
   }
@@ -1043,7 +1077,7 @@ input {
   .team-wallpaper-phone {
     display: block;
     position: absolute;
-    width: 426px;
+    width: 452px;
     height: 1412px;
     margin: 0 auto;
     object-fit: cover;
@@ -1089,18 +1123,50 @@ input {
   .teammate-contact-container {
     display: flex;
     flex-direction: column;
-    width: 259px;
-    height: 301px;
-    gap: 7rem;
-    margin-top: 1rem;
+    width: 296px;
+    height: 1143px;
+    gap: 5rem;
+    margin-top: 3rem;
+   
   }
 
+  .contact-frame {
+    width: 295px;
+    height: 301px;
+    margin:0 auto;
+  }
+    
+  .photo-container {
+    width: 215px;
+    height: 209px;
+    margin: 0 auto;
+  }
+
+  .photo-frame{
+    width: 161px;
+    height: 135px;
+    margin-left: 1.7rem;
+    border: none;
+  }
+  .team-image{
+    display: none;
+  }
+
+  .team-image-phone{
+    display: block;
+    width: 161px;
+    height: 135px;
+
+  
+  }
+  
   .reach-us-container {
     flex-direction: column;
     margin: 0 auto;
-    margin-top: 6em;
-    width: 403px;
+    margin-top: 3em;
+    width: 452px;
     height: 277px;
+
   }
 
   .reach-us-text {
@@ -1111,44 +1177,64 @@ input {
     letter-spacing: 0.05em;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 2rem;
+  }
+  .reach-us-text1 {
+    margin: 0 auto;
+font-size: 20px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0.05em;
+text-align: center;
+margin-bottom: 1.5rem;
+
   }
 
   .reach-us-text2 {
+    width: 366px;
+    height: 36px;
     font-size: 10px;
     font-weight: 400;
     line-height: 12px;
     letter-spacing: 0.05em;
     text-align: left;
+    margin-bottom: 2rem;
   }
-
+  .nothing-line {
+    margin: 0px;
+    border-bottom: 1px solid #575252;
+    width: 403px;
+  }
+  
   .form-container {
+    margin: 0 auto;
     width: 404px;
     height: 134px;
   }
 
   .input-container {
-    width: 456px;
-    height: 80px;
+    width: 385px;
+    
   }
 
   .name-tab,
   .details {
-    width: 195px;
+    width: 150px;
     height: 25px;
     display: flex;
-    gap: 1rem;
+    gap: 2.4rem;
   }
 
   input {
-    width: 180px;
+    width: 160px;
     height: 1.5625rem;
   }
 
   .about-us-container {
-    width: 424px;
+    width: 452px;
     height: 1006px;
     background-color: #1f1919;
-    margin-top: 6em;
+    margin-top: 3rem;
   }
 
   .about-content {
@@ -1157,7 +1243,12 @@ input {
     text-align: left;
     align-items: left;
     justify-content: left;
-    gap: 1.5rem;
+    gap: 1rem;
+  
+  }
+
+  .about-header{
+    margin-top: 3rem;
   }
 
   .about-us-text-1 {
@@ -1166,6 +1257,26 @@ input {
     line-height: 22px;
     letter-spacing: 0.05em;
     text-align: left;
+    
+  }
+
+  .white-graph{
+    display: none;
+  }
+
+  .white-graph-phone{
+    display: block;
+  }
+
+  .about-us-text-2 {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    margin-top: 2rem;
+    
   }
 
   .services {

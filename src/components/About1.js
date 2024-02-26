@@ -1,6 +1,7 @@
 import React from "react";
 import graphImage from "../assets/images/graph-image.png";
 import about1Wallpaper from "../assets/images/Closeup of tablet in woman's hands.png";
+import graphImagephone from "../assets/images/graph-image-phone.png";
 
 function About1() {
   return (
@@ -23,7 +24,9 @@ function About1() {
           That’s why FTA is dedicated to seeing you choose the right technology
           strategy ensuring you maintain a competitive edge over your peers
         </p>
-        <img src={graphImage} alt="graph" />
+        <img className="black-graph" src={graphImage} alt="graph" />
+        <img className="black-graph-phone" src={graphImagephone} alt="graph" />
+
         <p className="about1-text5">FINANCIAL TECHNOLOGY ADVISORS</p>
       </div>
 
