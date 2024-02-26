@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/portfolio-website-1/static/css/main.01a96aab.css",
+    "main.js": "/portfolio-website-1/static/js/main.e6505d04.js",
+    "static/js/592.b4a11fd8.chunk.js": "/portfolio-website-1/static/js/592.b4a11fd8.chunk.js",
+    "static/media/Inter-VariableFont_slnt,wght.ttf": "/portfolio-website-1/static/media/Inter-VariableFont_slnt,wght.853e01975d2783d9fa29.ttf",
+    "static/media/office-image.png": "/portfolio-website-1/static/media/office-image.b4ce80472343676ba3e0.png",
+    "static/media/Sarpanch-Regular.ttf": "/portfolio-website-1/static/media/Sarpanch-Regular.e238dcb64c5f4243ee58.ttf",
+    "static/media/dude-image.png": "/portfolio-website-1/static/media/dude-image.2fcc35b13931672a4436.png",
+    "static/media/background1.png": "/portfolio-website-1/static/media/background1.8fa791fe824b7e0aeb81.png",
+    "static/media/Closeup of tablet in woman's hands.png": "/portfolio-website-1/static/media/Closeup of tablet in woman's hands.00456eadea898ebe7090.png",
+    "static/media/research-image.png": "/portfolio-website-1/static/media/research-image.9ae1d4042309e6f917be.png",
+    "static/media/financial-services.png": "/portfolio-website-1/static/media/financial-services.f37c4e399453c8a241ac.png",
+    "static/media/tax-and-finance-image.png": "/portfolio-website-1/static/media/tax-and-finance-image.07c4ce9535669ff6bedf.png",
+    "static/media/background_phone-size.png": "/portfolio-website-1/static/media/background_phone-size.4268431473863161c35c.png",
+    "static/media/office-image-phone-size.png": "/portfolio-website-1/static/media/office-image-phone-size.7d226870b66628b612e7.png",
+    "static/media/team-member.png": "/portfolio-website-1/static/media/team-member.93643e2aeba6c3345774.png",
+    "index.html": "/portfolio-website-1/index.html",
+    "main.01a96aab.css.map": "/portfolio-website-1/static/css/main.01a96aab.css.map",
+    "main.e6505d04.js.map": "/portfolio-website-1/static/js/main.e6505d04.js.map",
+    "592.b4a11fd8.chunk.js.map": "/portfolio-website-1/static/js/592.b4a11fd8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01a96aab.css",
+    "static/js/main.e6505d04.js"
+  ]
+}
