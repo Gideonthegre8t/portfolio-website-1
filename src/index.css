@@ -1,13 +1,1179 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: inter;
+  src: url(./assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+  font-family: sarpanch;
+  src: url(./assets/fonts/Sarpanch/Sarpanch-Regular.ttf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0 auto;
+  width: 73.125rem;
+  height: 243rem;
+}
+.header-container {
+  width: 100%;
+  height: 33.5rem;
+  background: #1c0e0eb2;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-wallpaper {
+  position: absolute;
+  width: 65.875rem;
+  height: 32.6875rem;
+  top: 0.8125rem;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.phone-header-wallpaper {
+  display: none;
+}
+
+.top1 {
+  display: flex;
+  width: 100%;
+  height: 4.583rem;
+  border: 0px, 0px, 1px, 0px;
+  padding: 1rem, 3rem;
+  gap: 1rem;
+  align-items: basline;
+  font-size: 0.75rem;
+  font-family: "inter";
+}
+
+.phone-location-container {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.phone-icon,
+.location-icon {
+  display: flex;
+  padding: 1rem;
+  gap: 0.7rem;
+  color: #fff;
+}
+
+.phone-img,
+.location-img {
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-top: 0.5rem;
+}
+
+.login-txt {
+  margin-left: 39rem;
+  width: 37px;
+  height: 15px;
+  color: #fff;
+  padding: 1.1rem;
+}
+
+.red-line,
+.black-line {
+  width: 100%;
+  height: 1px;
+  background: red;
+}
+
+.black-line {
+  background: #3f3d3d;
+}
+
+.top2 {
+  display: flex;
+  width: 100%;
+  height: 3.4375rem;
+  gap: 18rem;
+  font-size: 0.75rem;
+  color: #fff;
+}
+
+.top2-first-txt {
+  font-size: 1rem;
+  margin-left: 3.5rem;
+  font-family: "sarpanch";
+}
+
+.nav-menu {
+  display: flex;
+  gap: 1.7rem;
+  margin-top: 0.5rem;
+  margin-left: 2.3rem;
+  font-family: "inter";
+}
+.nav-icon {
+  display: none;
+}
+
+.nav-line {
+  width: 4.375rem;
+  height: 1px;
+  margin-left: 39.9rem;
+  background: #fff;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  color: #fff;
+  font-family: "inter";
+  font-weight: 800;
+  padding-top: 4rem;
+}
+
+.header-content1 {
+  background: #292929;
+  padding: 0.25rem;
+  font-size: 1.25rem;
+  margin-right: 7.5rem;
+  line-height: 1.5rem;
+}
+
+.header-content2 {
+  font-size: 1.875rem;
+  width: 40.625rem;
+  height: 4.5rem;
+  margin-top: 5px;
+}
+
+.about1-container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  width: 56.125rem;
+  height: 27.5rem;
+  gap: 4.1875rem;
+  margin-top: 3rem;
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 0.9375rem;
+  letter-spacing: 0.05em;
+}
+
+.about1-text1,
+.about2-text1,
+.choose-text1 {
+  font-family: "sarpanch";
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 2.8125rem;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #413f3f;
+}
+
+.about1-text3 {
+  width: 29.75rem;
+  height: 4.7rem;
+}
+
+.about1-text4 {
+  width: 29.75rem;
+  height: 1.875rem;
+}
+
+.about1-text5,
+.about-us-text-1 {
+  font-family: "sarpanch";
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+  letter-spacing: 0.05em;
+  color: #4d4a4a;
+}
+
+.about1-image {
+  position: relative;
+  margin-left: -0rem;
+  bottom: 95%;
+  width: 22rem;
+  height: 24.5rem;
+}
+
+.about1-story2 {
+  width: 351px;
+  height: 393px;
+  font-family: "sarpanch";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  background: #fa434a;
+  margin-top: 1rem;
+}
+
+.about1-story2-txt {
+  width: 16.29875rem;
+  height: 16.284375rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 7rem;
+}
+
+.about2-container {
+  margin: 0 auto;
+  width: 56.125rem;
+  height: 31rem;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.about2-text1 {
+  margin-top: 0px;
+  text-align: center;
+}
+
+.about2-text2 {
+  width: 54.456875rem;
+  height: 1rem;
+  font-family: "inter";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #000000;
+  text-align: center;
+}
+
+.about2-story3-container {
+  display: flex;
+  width: 56.25rem;
+  height: 24.13rem;
+
+  padding: 1.25rem, 0px, 1.25rem, 0px;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.about2-story1 {
+  margin-top: 2rem;
+}
+
+.about2-story1-text1,
+.choose-content-head {
+  font-family: "inter";
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0.05em;
+}
+.choose-content-head {
+  font-size: 0.9rem;
+}
+
+.about2-story1-text2,
+.choose-content-paragraph {
+  margin: 0 auto;
+  width: 16rem;
+  height: 8.2rem;
+  gap: 0.9375rem;
+  font-family: "inter";
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0.05em;
+}
+
+.about2-story1-image {
+  width: 16rem;
+  height: 12.25rem;
+}
+.ellipse {
+  position: relative;
+  top: 0.35rem;
+  padding-right: 0.5rem;
+}
+
+.advice-container {
+  display: flex;
+  margin: auto 0;
+  width: 74.6rem;
+  height: 8rem;
+  margin-top: 5rem;
+  padding: 1.625rem, 7.5rem, 1.625rem, 4.75rem;
+  justify-content: center;
+  gap: 1.5rem;
+  background: #3c3c3c;
+  color: #fff;
+  text-align: left;
+  justify-content: center;
+}
+
+.advice-text1 {
+  width: 47.125rem;
+  height: 2.75rem;
+  font-family: "sarpanch";
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+  letter-spacing: 0.05em;
+}
+
+.advice-text2 {
+  font-family: "inter";
+  font-size: 1.13rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  letter-spacing: 0.05em;
+}
+
+.call-to-action {
+  width: 13.5rem;
+  height: 3.9rem;
+  margin-top: 2.8%;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #fa434a;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2rem;
+  letter-spacing: 0.05em;
+}
+
+.action-tab {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2rem;
+  letter-spacing: 0.05em;
+  padding: 5px;
+}
+
+.choose-container {
+  display: flex;
+  width: 62rem;
+  height: 37.7rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+  gap: 5.7rem;
+}
+
+.choose-text2 {
+  width: 31.7rem;
+  height: 8.8rem;
+  font-family: "inter";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.57rem;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #575252;
+}
+
+.choose-content-container,
+.choose-content-container2 {
+  display: flex;
+  gap: 1.5rem;
+}
+.choose-content-container2 {
+  margin-top: 2rem;
+}
+
+.choose-content-paragraph {
+  width: 13.8rem;
+  height: 5rem;
+  font-size: 0.9rem;
+}
+
+.team-container {
+  width: 74.6rem;
+  height: 46rem;
+  margin: 0 auto;
+  background: #f80606;
+}
+.team-head-container {
+  width: 45.1rem;
+  height: 11.9rem;
+  gap: 2.13rem;
+  margin: 0 auto;
+  color: #fff;
+  margin-top: -0.9375rem;
+}
+
+.team-header {
+  font-family: "sarpanch";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 0.05em;
+  color: #fff;
+  text-align: center;
+  padding: 3rem;
+}
+
+.team-paragraph1 {
+  font-family: "inter";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.1875rem;
+  letter-spacing: 0.05em;
+}
+
+.team-paragraph2 {
+  font-family: "inter";
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.0625rem;
+  letter-spacing: 0.05em;
+}
+
+.teammate-contact-container {
+  display: flex;
+  width: 53rem;
+  height: 19rem;
+  gap: 1rem;
+  margin: 0 auto;
+  margin-top: 7rem;
+}
+.contact-frame {
+  width: 18.4375rem;
+  height: 19rem;
+  margin: 0 auto;
+}
+
+.photo-container {
+  position: relative;
+  width: 16.625rem;
+  height: 13.0625rem;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.photo-frame {
+  width: 12.625rem;
+  height: 8.41rem;
+  border: 1px solid;
+  position: absolute;
+  margin-top: 2.1875rem;
+  margin-left: 1.875rem;
+  color: #949494;
+}
+
+.contact-container {
+  display: flex;
+}
+
+.contact {
+  text-align: center;
+  color: #ffffff;
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 0.9375rem;
+  letter-spacing: 0.05em;
+}
+
+.team-wallpaper {
+  position: absolute;
+  width: 74.6rem;
+  height: 46rem;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.team-wallpaper-phone {
+  display: none;
+}
+
+.reach-us-container {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 6em;
+  width: 55.875rem;
+  height: 8.375rem;
+}
+.reach-us-text {
+  width: 323.9375rem;
+  height: 8.3125rem;
+  gap: 1.25rem;
+}
+
+.reach-us-text1 {
+  margin-top: 0px;
+  font-family: "sarpanch";
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.8125rem;
+  letter-spacing: 0.05em;
+}
+
+.reach-us-text2 {
+  width: 22.875rem;
+  height: 4.25rem;
+  font-family: "inter";
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.0625rem;
+  letter-spacing: 0.05em;
+}
+
+.form-container {
+  width: 28.3125rem;
+  height: 8.375rem;
+}
+
+.nothing-selected {
+  margin: 0px;
+  padding: 0px;
+  font-family: "inter";
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1rem;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #575252;
+}
+.line {
+  margin: 0px;
+  border-bottom: 1px solid #575252;
+}
+
+.arrow {
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+.input-container {
+  margin-top: 1rem;
+}
+.name-tab,
+.details {
+  display: flex;
+  gap: 2.0625rem;
+}
+
+.name-tab {
+  margin-top: 2rem;
+}
+
+.details {
+  margin-top: 1.6rem;
+}
+
+input {
+  background: none;
+  border: none;
+  border-radius: none;
+  border-bottom: 1px solid #575252;
+  width: 11.875rem;
+  height: 1.5625rem;
+}
+
+.about-us-container {
+  width: 74.6rem;
+  height: 23.75rem;
+  background-color: #1f1919;
+  margin-top: 6em;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  color: #575252;
+}
+.about-header {
+  color: #ffffff;
+}
+
+.about-us-text {
+  width: 23.875rem;
+  height: 21.25rem;
+
+  margin-top: 1rem;
+}
+
+.service-header {
+  margin-bottom: 2rem;
+}
+
+.about-header,
+.service-header,
+.recent-news-header {
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.0625rem;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #ffffff;
+}
+
+.services {
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 0.625rem;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+.recent-news {
+  width: 13.125rem;
+  height: 16.4375rem;
+  gap: 1.25rem;
+}
+
+.about-us-text-1 {
+  margin-top: 0px;
+}
+
+.about-us-text-2 {
+  width: 21.25rem;
+  height: 7.125rem;
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 0.9375rem;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+.right-arrow {
+  margin-right: 0.3rem;
+}
+
+.read-more-text {
+  text-align: right;
+  font-family: Inter;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.recent-news-paragragh {
+  width: 13.125rem;
+  height: 3.875rem;
+  gap: 0.75rem;
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.0625;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+
+
+@media (max-width: 600px) {
+  body {
+    margin: 0 auto;
+    width: 430px;
+    height: 6302px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-container {
+    width: 452px;
+    height: 332px;
+    background: #120b0b;
+  }
+
+  .header-wallpaper {
+    display: none;
+  }
+  .phone-header-wallpaper {
+    display: block;
+    position: absolute;
+    width: 452px;
+    height: 332px;
+    opacity: 50%;
+  }
+
+  .top1 {
+    display: flex;
+    width: 467px;
+    height: 55px;
+    gap: 250px;
+  }
+
+  .phone-location-container {
+    gap: 2.5rem;
+    align-items: center;
+    margin-left: 0rem;
+  }
+
+  .location-icon,
+  .location-img {
+    display: none;
+  }
+  .login-txt {
+    margin: 0 auto;
+    padding: 8.5px;
+    margin-left: 1px;
+  }
+
+  .top2 {
+    width: 100%;
+    height: 2.4rem;
+    gap: 9rem;
+  }
+
+  .top2-first-txt {
+    font-family: Sarpanch;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+  .header-content {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .header-content1 {
+    background: #292929;
+    width: 272px;
+    height: 40px;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin: 0 auto;
+    z-index: +1;
+  }
+  .header-content2 {
+    width: 376px;
+    height: 48px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 120px;
+  }
+  .black-line {
+    background: black;
+    
+  }
+  
+
+  .nav-icon {
+    display: block;
+  }
+
+  .about1-text1 {
+    font-family: Sarpanch;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+  }
+
+  .about1-container {
+    display: inline-block;
+    width: 452px;
+    height: 391px;
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0.05em;
+    gap: 15px;
+    margin-top: 1rem;
+  }
+
+  .about1-story1 {
+    width: 366px;
+    margin: 0 auto;
+  }
+
+  .about1-text1 {
+    text-align: center;
+  }
+  .about1-text2,
+  .about1-text3,
+  .about1-text4 {
+    width: 362px;
+  }
+
+  .about1-text5 {
+    text-align: center;
+    font-family: Sarpanch;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+  }
+
+  .about1-story2 {
+    width: 383px;
+    height: 259px;
+    margin: 0 auto;
+    margin-top: -5rem;
+  }
+
+  .about1-story2-txt {
+    font-family: Sarpanch;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    padding: 2rem;
+  }
+
+  .about1-image {
+    position: relative;
+    width: 383px;
+    height: 259px;
+    bottom: 324px;
+  }
+  .about2-container {
+    margin: 34px;
+    width: 383px;
+    height: 1272px;
+    margin-top: -20rem;
+  }
+
+  .about2-text1 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
+
+  .about2-text2 {
+    width: 348.24px;
+    height: 24px;
+    margin: 0 auto;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0.05em;
+    color: #000000;
+  }
+
+  .about2-story3-container {
+    flex-direction: column;
+    margin: 0 auto;
+    align-content: center;
+    width: 376px;
+    height: 1161px;
+    text-align: center;
+    gap: 0px;
+    padding: 0.1rem;
+  }
+
+  .about2-story1-text2 {
+    width: 250px;
+    height: 80px;
+    font-family: Inter;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    gap: 0.9375rem;
+  }
+
+  .about2-story1-text1 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
+
+  .advice-container {
+    display: inline-block;
+    width: 426px;
+    height: 200px;
+    margin-top: -1rem;
+    justify-content: center;
+    padding: 0px;
+    gap: 1.5rem;
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .advice-text {
+    width: 456px;
+    height: 90px;
+    margin-top: 25px;
+  }
+
+  .advice-text1 {
+    width: 452px;
+    height: 44px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
+
+  .advice-text2 {
+    margin: 0 auto;
+    width: 268px;
+    height: 34px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+  }
+
+  .call-to-action {
+    margin: 0 auto;
+    width: 162px;
+    height: 38px;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #fa434a;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    letter-spacing: 0.05em;
+
+  }
+
+  .action-tab {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    padding: 10px;
+  }
+
+  .choose-container {
+    flex-direction: column;
+    width: 426px;
+    height: 900px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    gap: 5.7rem;
+  }
+
+  .dude-photo {
+    display: none;
+  }
+
+  .choose-text-container {
+    width: 373px;
+    height: 198px;
+    gap: 25px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .choose-text1 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
+
+  .choose-text2 {
+    width: 371px;
+    height: 140px;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    text-align: left;
+  }
+
+  .choose-content-container,
+  .choose-content-container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .choose-content-head {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    margin-right: 30px;
+  }
+
+  .choose-content-paragraph {
+    width: 221px;
+    height: 80px;
+    font-family: Inter;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-align: left;
+  }
+
+  .team-container {
+    flex-direction: column;
+    width: 426px;
+    height: 1412px;
+    background: #f80606;
+  }
+
+  .team-wallpaper {
+    display: none;
+  }
+  .team-wallpaper-phone {
+    display: block;
+    position: absolute;
+    width: 426px;
+    height: 1412px;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+  .team-head-container {
+    margin-top: -3rem;
+    width: 426px;
+    height: 1, 385px;
+    gap: 0px;
+  }
+
+  .team-header {
+    width: 172px;
+    height: 28px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    margin-top: -4px;
+    padding: 1rem;
+    text-align: center;
+  }
+  .team-paragraph1 {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
+
+  .team-paragraph2 {
+    width: 398px;
+    height: 72px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    padding: 3px;
+  }
+
+  .teammate-contact-container {
+    display: flex;
+    flex-direction: column;
+    width: 259px;
+    height: 301px;
+    gap: 7rem;
+    margin-top: 1rem;
+  }
+
+  .reach-us-container {
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 6em;
+    width: 403px;
+    height: 277px;
+  }
+
+  .reach-us-text {
+    width: 366px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .reach-us-text2 {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0.05em;
+    text-align: left;
+  }
+
+  .form-container {
+    width: 404px;
+    height: 134px;
+  }
+
+  .input-container {
+    width: 456px;
+    height: 80px;
+  }
+
+  .name-tab,
+  .details {
+    width: 195px;
+    height: 25px;
+    display: flex;
+    gap: 1rem;
+  }
+
+  input {
+    width: 180px;
+    height: 1.5625rem;
+  }
+
+  .about-us-container {
+    width: 424px;
+    height: 1006px;
+    background-color: #1f1919;
+    margin-top: 6em;
+  }
+
+  .about-content {
+    flex-direction: column;
+    color: #575252;
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+    gap: 1.5rem;
+  }
+
+  .about-us-text-1 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-align: left;
+  }
+
+  .services {
+    margin: 0 auto;
+    margin-left: 25px;
+  }
+
+  .recent-news {
+    margin: 0 auto;
+  }
 }
