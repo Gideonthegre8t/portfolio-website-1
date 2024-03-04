@@ -10,14 +10,18 @@ function Navbar() {
     navRef.current.classList.toggle("responsive_nav");
   };
 
+  const handleClick = (event) => {
+    event.preventDefault(); // Prevent default anchor behavior
+  };
+
   return (
     <div className="navigator ">
       <nav className="navbar" ref={navRef}>
-        <a href="/#">HOME</a>
-        <a href="/#">CLIENTS</a>
-        <a href="/#">PARTNERS</a>
-        <a href="/#">SERVICES</a>
-        <a href="/#">CONTACT</a>
+        <a href="/#" onClick={handleClick}>HOME</a>
+        <a href="/#" onClick={handleClick}>CLIENTS</a>
+        <a href="/#" onClick={handleClick}>PARTNERS</a>
+        <a href="/#" onClick={handleClick}>SERVICES</a>
+        <a href="/#" onClick={handleClick}>CONTACT</a>
         {isNavOpen ? (
           <button className="nav-btn nav-close-btn" onClick={toggleNavbar}>
             <FaTimes />

@@ -811,6 +811,7 @@ input {
   .navigator {
     margin: 0 auto;
     gap: 0px;
+    bottom: 0;
   }
   nav a {
     margin: 0;
