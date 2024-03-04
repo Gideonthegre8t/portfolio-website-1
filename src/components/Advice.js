@@ -12,7 +12,7 @@ function Advice() {
         </p>
       </div>
       <div className="call-to-action">
-        <p className="action-tab">CALL TO ACTION</p>
+        <button className="action-tab">CALL TO ACTION</button>
       </div>
     </div>
   );

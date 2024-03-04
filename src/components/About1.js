@@ -31,11 +31,13 @@ function About1() {
       </div>
 
       <div className="about1-story2">
-        <p className="about1-story2-txt">
-          TODAY’S TECHNOLOGY ALLOWS OUR CLIENTS TO TAKE THEIR KNOWLEDGE TO THE
-          MARKET IN WAYS THAT PREVIOUS GENERATIONS COULD ONLY DREAM OF{" "}
-        </p>
-        <img className="about1-image" src={about1Wallpaper} alt="graph" />
+        <div className="about1-story2-txt">
+          <p>
+            TODAY’S TECHNOLOGY ALLOWS OUR CLIENTS TO TAKE THEIR KNOWLEDGE TO THE
+            MARKET IN WAYS THAT PREVIOUS GENERATIONS COULD ONLY DREAM OF{" "}
+          </p>
+        </div>
+        <img className="about1-image" src={about1Wallpaper} alt="wallpaper" />
       </div>
     </section>
   );

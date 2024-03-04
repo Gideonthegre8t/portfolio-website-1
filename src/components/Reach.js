@@ -6,16 +6,18 @@ const ReachOutForm = () => {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+  const [formFilled, setFormFilled] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you can add validation logic
+    // add validation logic
     console.log("Form submitted:", { firstName, lastName, email, phone });
     // Reset form fields
     setFirstName("");
     setLastName("");
     setEmail("");
     setPhone("");
+    setFormFilled(true);
   };
 
   return (
@@ -32,7 +34,8 @@ const ReachOutForm = () => {
       <div>
         <form className="form-container" onSubmit={handleSubmit}>
           <p className="nothing-selected">
-            Nothing selected <img className="arrow" src={arrow} alt="arrow" />
+            {formFilled ? "Form filled" : "Nothing selected"}{" "}
+            <img className="arrow" src={arrow} alt="arrow" />
           </p>
           <div className="nothing-line" />
 
@@ -81,9 +84,11 @@ const ReachOutForm = () => {
                 />
               </label>
               <br />
-              {/* <button type="submit">Submit</button> */}
             </div>
           </div>
+          <button className="reach-button" type="submit">
+            Submit
+          </button>
         </form>
       </div>
     </div>

@@ -3,7 +3,7 @@ import phoneIcon from "../assets/images/phone-icon.png";
 import locationIcon from "../assets/images/location-icon.png";
 import headerWallPaper from "../assets/images/background1.png";
 import phoneWallpaper from "../assets/images/background_phone-size.png";
-import navIcon from "../assets/images/nav-bar.png";
+import Navbar from "./Navbar";
 
 function Header() {
   return (
@@ -38,26 +38,21 @@ function Header() {
       <div className="red-line"></div>
 
       <div className="top2">
-        <p className="top2-first-txt">FINANCIAL TECHNOLOGY ADVISORS </p>
-        <img className="nav-icon" src={navIcon} alt="navigation-icon" />
-        <div className="nav-menu">
-          <p>HOME</p>
-          <p>CLIENTS</p>
-          <p>PARTNERS</p>
-          <p>SERVICES</p>
-          <p>CONTACT</p>
+        <p className="top2-first-txt animate slideInLeft">
+          FINANCIAL TECHNOLOGY ADVISORS{" "}
+        </p>
+        <div>
+          <Navbar />
         </div>
       </div>
 
-      <div className="black-line">
-        <div className="nav-line"></div>
-      </div>
+      <div className="black-line"></div>
 
       <div className="header-content">
-        <p className="header-content1">
+        <p className="header-content1 animate slideInRight animate--delay animate--fast">
           WHAT DIFFERENTIATES US FROM OTHER ADVISERS ?{" "}
         </p>
-        <p className="header-content2">
+        <p className="header-content2  animate slideInLeft animate--slow">
           OUR GENUINE MOTIVATION TO SEE OUR CLIENTS SUCCEED.
         </p>
       </div>

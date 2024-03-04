@@ -9,6 +9,7 @@
 
 body {
   margin: 0 auto;
+  padding: 0;
   width: 73.125rem;
   height: 243rem;
 }
@@ -89,9 +90,12 @@ body {
 
 .top2 {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
   width: 100%;
   height: 3.4375rem;
-  gap: 18rem;
+  gap: 10rem;
   font-size: 0.75rem;
   color: #fff;
 }
@@ -100,24 +104,55 @@ body {
   font-size: 1rem;
   margin-left: 3.5rem;
   font-family: "sarpanch";
+  margin-left: 1rem;
 }
 
-.nav-menu {
-  display: flex;
-  gap: 1.7rem;
-  margin-top: 0.5rem;
-  margin-left: 2.3rem;
+.navigator {
+  margin-right: 7.5rem;
+  margin-bottom: 1rem;
+}
+
+nav a {
+  position: relative;
+  margin: 1rem;
+  color: #ffffff;
+  text-decoration: none;
   font-family: "inter";
-}
-.nav-icon {
-  display: none;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+  text-align: left;
 }
 
-.nav-line {
-  width: 4.375rem;
-  height: 1px;
-  margin-left: 39.9rem;
-  background: #fff;
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 240%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+}
+.navbar a:hover::before {
+  width: 100%;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #a71111;
+}
+
+.nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
 }
 
 .header-content {
@@ -197,14 +232,14 @@ body {
 .about1-image {
   position: relative;
   margin-left: -0rem;
-  bottom: 95%;
+  bottom: 91%;
   width: 22rem;
   height: 24.5rem;
 }
 
 .about1-story2 {
-  width: 351px;
-  height: 393px;
+  width: 22rem;
+  height: 24.5rem;
   font-family: "sarpanch";
   font-size: 16px;
   font-weight: 500;
@@ -220,10 +255,11 @@ body {
   height: 16.284375rem;
   text-align: center;
   margin: 0 auto;
-  margin-top: 7rem;
+  margin-top: 6rem;
+  text-align: left;
 }
 
-.black-graph-phone{
+.black-graph-phone {
   display: none;
 }
 
@@ -256,7 +292,6 @@ body {
   display: flex;
   width: 56.25rem;
   height: 24.13rem;
-
   padding: 1.25rem, 0px, 1.25rem, 0px;
   gap: 1.5rem;
   text-align: left;
@@ -294,7 +329,13 @@ body {
 .about2-story1-image {
   width: 16rem;
   height: 12.25rem;
+  transition: transform 0.3s;
 }
+
+.about2-story1-image:hover {
+  transform: translateY(-5px);
+}
+
 .ellipse {
   position: relative;
   top: 0.35rem;
@@ -334,27 +375,28 @@ body {
   letter-spacing: 0.05em;
 }
 
-.call-to-action {
-  width: 13.5rem;
-  height: 3.9rem;
-  margin-top: 2.8%;
-  text-align: center;
+.action-tab {
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 18%;
   justify-content: center;
-  gap: 10px;
+  align-content: center;
+  width: 13.5rem;
+  height: 3rem;
   background-color: #fa434a;
-  font-family: Inter;
+  font-family: "inter";
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.2rem;
   letter-spacing: 0.05em;
+  border: none;
+  color: #fff;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 
-.action-tab {
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.2rem;
-  letter-spacing: 0.05em;
-  padding: 5px;
+.action-tab:hover {
+  transform: translateY(-5px);
+  background-color: tomato;
 }
 
 .choose-container {
@@ -467,7 +509,7 @@ body {
   color: #949494;
 }
 
-.team-image-phone{
+.team-image-phone {
   display: none;
 }
 
@@ -478,7 +520,7 @@ body {
 .contact {
   text-align: center;
   color: #ffffff;
-  font-family: 'inter';
+  font-family: "inter";
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 0.9375rem;
@@ -534,7 +576,8 @@ body {
   height: 8.375rem;
 }
 
-.nothing-selected {
+.nothing-selected,
+.reach-button {
   margin: 0px;
   padding: 0px;
   font-family: "inter";
@@ -579,6 +622,12 @@ input {
   border-bottom: 1px solid #575252;
   width: 11.875rem;
   height: 1.5625rem;
+}
+
+.reach-button {
+  margin-top: 23px;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
 .about-us-container {
@@ -652,7 +701,7 @@ input {
   text-align: left;
 }
 
-.white-graph-phone{
+.white-graph-phone {
   display: none;
 }
 
@@ -680,8 +729,6 @@ input {
   letter-spacing: 0.05em;
   text-align: left;
 }
-
-
 
 @media (max-width: 600px) {
   body {
@@ -739,16 +786,74 @@ input {
   }
 
   .top2-first-txt {
-    font-family: Sarpanch;
+    font-family: "sarpanch";
     font-size: 11px;
     font-weight: 500;
     line-height: 15px;
     letter-spacing: 0.05em;
+    margin-left: 15px;
   }
 
-  .nav-menu {
+  .navigator,
+  .nav-btn {
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    margin-top: 3.5rem;
+  }
+
+  .nav-btn {
+    visibility: visible;
+  }
+
+  .navigator {
+    margin: 0 auto;
+    gap: 0px;
+  }
+  nav a {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "inter";
+    font-size: 7px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: #e38b8b;
+  }
+  .navbar a::before {
     display: none;
   }
+
+  .navigator,
+  nav {
+    position: absolute;
+    bottom: -2.8rem;
+    right: 0.5rem;
+    height: 45%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: transparent;
+    transition: 1s;
+    transform: translateY(-33.5vh);
+  }
+
+  .responsive_nav {
+    transform: none;
+  }
+
+  nav .nav-close-btn {
+    display: block;
+    position: absolute;
+    top: -10rem;
+  }
+
   .header-content {
     justify-content: center;
     align-items: center;
@@ -766,7 +871,7 @@ input {
     letter-spacing: 0.05em;
     text-align: center;
     margin: 0 auto;
-    margin-top: -6rem;
+    margin-top: 1rem;
     z-index: +1;
   }
   .header-content2 {
@@ -784,12 +889,6 @@ input {
   }
   .black-line {
     background: black;
-    
-  }
-  
-
-  .nav-icon {
-    display: block;
   }
 
   .about1-text1 {
@@ -820,11 +919,10 @@ input {
 
   .about1-text1 {
     text-align: center;
- 
-font-size: 20px;
-font-weight: 500;
-line-height: 28px;
-letter-spacing: 0.05em;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.05em;
   }
 
   .about1-text2,
@@ -844,44 +942,41 @@ letter-spacing: 0.05em;
 
   .about1-story2 {
     width: 383px;
-    height: 259px;
+    height: 240px;
     margin: 0 auto;
     margin-top: -4rem;
   }
 
   .about1-story2-txt {
-  width: 284.79px;
-    font-family: Sarpanch;
+    width: 284.79px;
+    height: 201px;
+    font-family: "sarpanch";
     font-size: 16px;
     font-weight: 500;
     line-height: 30px;
     letter-spacing: 0.05em;
-    padding: 3rem;
-    color: #fff;
     text-align: left;
+    padding: 1rem;
   }
 
-
-
-  .black-graph{
+  .black-graph {
     display: none;
   }
-  .black-graph-phone{
+  .black-graph-phone {
     display: block;
   }
-  
 
   .about1-image {
     position: relative;
-    width: 383px;
-    height: 259px;
-    bottom: 355px;
+    width: 384px;
+    height: 240px;
+    bottom: 232px;
   }
   .about2-container {
     margin: 34px;
     width: 383px;
     height: 1272px;
-    margin-top: -20rem;
+    margin-top: -13rem;
   }
 
   .about2-text1 {
@@ -973,24 +1068,11 @@ letter-spacing: 0.05em;
     letter-spacing: 0.05em;
   }
 
-  .call-to-action {
+  .action-tab {
     margin: 0 auto;
+    margin-top: 20px;
     width: 162px;
     height: 38px;
-    margin-top: 20px;
-    text-align: center;
-    justify-content: center;
-    gap: 10px;
-    background-color: #fa434a;
-    font-family: Inter;
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.2rem;
-    letter-spacing: 0.05em;
-
-  }
-
-  .action-tab {
     font-size: 12px;
     font-weight: 500;
     line-height: 15px;
@@ -1127,46 +1209,42 @@ letter-spacing: 0.05em;
     height: 1143px;
     gap: 5rem;
     margin-top: 3rem;
-   
   }
 
   .contact-frame {
     width: 295px;
     height: 301px;
-    margin:0 auto;
+    margin: 0 auto;
   }
-    
+
   .photo-container {
     width: 215px;
     height: 209px;
     margin: 0 auto;
   }
 
-  .photo-frame{
+  .photo-frame {
     width: 161px;
     height: 135px;
     margin-left: 1.7rem;
     border: none;
   }
-  .team-image{
+  .team-image {
     display: none;
   }
 
-  .team-image-phone{
+  .team-image-phone {
     display: block;
     width: 161px;
     height: 135px;
-
-  
   }
-  
+
   .reach-us-container {
     flex-direction: column;
     margin: 0 auto;
     margin-top: 3em;
     width: 452px;
     height: 277px;
-
   }
 
   .reach-us-text {
@@ -1181,13 +1259,12 @@ letter-spacing: 0.05em;
   }
   .reach-us-text1 {
     margin: 0 auto;
-font-size: 20px;
-font-weight: 400;
-line-height: 28px;
-letter-spacing: 0.05em;
-text-align: center;
-margin-bottom: 1.5rem;
-
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin-bottom: 1.5rem;
   }
 
   .reach-us-text2 {
@@ -1205,7 +1282,7 @@ margin-bottom: 1.5rem;
     border-bottom: 1px solid #575252;
     width: 403px;
   }
-  
+
   .form-container {
     margin: 0 auto;
     width: 404px;
@@ -1214,7 +1291,6 @@ margin-bottom: 1.5rem;
 
   .input-container {
     width: 385px;
-    
   }
 
   .name-tab,
@@ -1228,6 +1304,12 @@ margin-bottom: 1.5rem;
   input {
     width: 160px;
     height: 1.5625rem;
+  }
+
+  .reach-button {
+    margin-left: 44%;
+    margin-top: 12px;
+    border-radius: 3px;
   }
 
   .about-us-container {
@@ -1244,10 +1326,9 @@ margin-bottom: 1.5rem;
     align-items: left;
     justify-content: left;
     gap: 1rem;
-  
   }
 
-  .about-header{
+  .about-header {
     margin-top: 3rem;
   }
 
@@ -1257,26 +1338,24 @@ margin-bottom: 1.5rem;
     line-height: 22px;
     letter-spacing: 0.05em;
     text-align: left;
-    
   }
 
-  .white-graph{
+  .white-graph {
     display: none;
   }
 
-  .white-graph-phone{
+  .white-graph-phone {
     display: block;
   }
 
   .about-us-text-2 {
-    font-family: Inter;
+    font-family: "inte";
     font-size: 12px;
     font-weight: 400;
     line-height: 15px;
     letter-spacing: 0.05em;
     text-align: left;
     margin-top: 2rem;
-    
   }
 
   .services {
@@ -1287,4 +1366,49 @@ margin-bottom: 1.5rem;
   .recent-news {
     margin: 0 auto;
   }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.slideInLeft {
+  animation: slideInLeft;
+  animation-timing-function: ease-in;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(-800px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slideInRight {
+  animation: slideInRight;
+  animation-timing-function: ease-in;
+}
+
+/*utility classes*/
+.animate {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animate--delay {
+  animation-delay: 0.5s;
+}
+
+.animate--fast {
+  animation-duration: 2s;
+}
+
+.animate--slow {
+  animation-duration: 3s;
 }

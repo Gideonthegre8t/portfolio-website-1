@@ -1,6 +1,6 @@
 import React from "react";
 import graphImage2 from "../assets/images/white-graph-image.png";
-import graphImage2phone from "../assets/images/white-graph-image-phone.png"
+import graphImage2phone from "../assets/images/white-graph-image-phone.png";
 import rightArrow from "../assets/images/right-arrow.png";
 
 function AboutUs() {
@@ -10,7 +10,11 @@ function AboutUs() {
         <div className="about-us-text">
           <h3 className="about-header">ABOUT US</h3>
           <img className="white-graph" src={graphImage2} alt="graph" />
-          <img className="white-graph-phone" src={graphImage2phone} alt="graph" />
+          <img
+            className="white-graph-phone"
+            src={graphImage2phone}
+            alt="graph"
+          />
           <p className="about-us-text-1">FINANCIAL TECHNOLOGY ADVISORS</p>
           <p className="about-us-text-2">
             Since founding Financial Technology Advisors in 2014 we have
