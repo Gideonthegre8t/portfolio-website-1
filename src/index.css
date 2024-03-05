@@ -154,7 +154,7 @@ nav a:hover {
   font-size: 1.8rem;
 }
 
-.icon{
+.icon {
   color: #fff;
 }
 
@@ -261,7 +261,6 @@ nav a:hover {
   margin-top: 6rem;
   text-align: left;
   color: #fff;
-
 }
 
 .black-graph-phone {
@@ -799,11 +798,11 @@ input {
     margin-left: 15px;
   }
 
-
   .nav-btn {
     visibility: visible;
     position: relative;
     margin-top: 3.5rem;
+    opacity: 1;
   }
 
   .navigator {
@@ -872,8 +871,7 @@ input {
     letter-spacing: 0.05em;
     text-align: center;
     margin: 0 auto;
-    margin-top: 1rem;
-    z-index: +1;
+    margin-top: 0.5rem;
   }
   .header-content2 {
     width: 376px;
@@ -1413,4 +1411,3 @@ input {
 .animate--slow {
   animation-duration: 3s;
 }
-

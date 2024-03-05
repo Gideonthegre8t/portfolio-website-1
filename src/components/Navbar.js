@@ -14,6 +14,7 @@ function Navbar() {
   const handleClick = (event) => {
     event.preventDefault(); // Prevent default anchor behavior
   };
+  
 
   return (
     <div className="navigator">
