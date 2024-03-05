@@ -150,7 +150,7 @@ nav a:hover {
   border: none;
   outline: none;
   color: #ffffff;
-  visibility: hidden;
+  visibility: visible;
   opacity: 0;
   font-size: 1.8rem;
 }
@@ -737,7 +737,7 @@ input {
   text-align: left;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   body {
     margin: 0 auto;
     width: 452px;
@@ -810,6 +810,7 @@ input {
   }
 
   .nav-btn {
+    display: block;
     visibility: visible;
   }
 

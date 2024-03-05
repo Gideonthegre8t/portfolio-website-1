@@ -41,9 +41,7 @@ function Header() {
         <p className="top2-first-txt animate slideInLeft">
           FINANCIAL TECHNOLOGY ADVISORS{" "}
         </p>
-        <div>
           <Navbar />
-        </div>
       </div>
 
       <div className="black-line"></div>
