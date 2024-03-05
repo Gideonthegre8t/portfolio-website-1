@@ -799,17 +799,11 @@ input {
     margin-left: 15px;
   }
 
-  .navigator,
-  .nav-btn {
-    visibility: visible;
-    opacity: 1;
-    position: relative;
-    margin-top: 3.5rem;
-  }
 
   .nav-btn {
-    display: block;
- 
+    visibility: visible;
+    position: relative;
+    margin-top: 3.5rem;
   }
 
   .navigator {
