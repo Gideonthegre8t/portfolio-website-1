@@ -52,7 +52,7 @@ function Header() {
         <p className="header-content1 animate slideInRight animate--delay animate--fast">
           WHAT DIFFERENTIATES US FROM OTHER ADVISERS ?{" "}
         </p>
-        <p className="header-content2  animate slideInLeft animate--slow">
+        <p className="header-content2  animate slideInLeft animate--slow moveLeft ">
           OUR GENUINE MOTIVATION TO SEE OUR CLIENTS SUCCEED.
         </p>
       </div>
