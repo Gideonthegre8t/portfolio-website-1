@@ -40,6 +40,7 @@ function Header() {
       <div className="top2">
         <p className="top2-first-txt animate slideInLeft">
           FINANCIAL TECHNOLOGY ADVISORS{" "}
+          
         </p>
           <Navbar />
       </div>

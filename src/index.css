@@ -150,8 +150,7 @@ nav a:hover {
   border: none;
   outline: none;
   color: #ffffff;
-  visibility: visible;
-  opacity: 0;
+  visibility: hidden;
   font-size: 1.8rem;
 }
 
