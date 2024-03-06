@@ -1,6 +1,6 @@
 import React from "react";
 import { useRef, useState } from "react";
-import CartIcon from "./CartIcon";
+import MenuIcon from "./MenuIcon";
 
 function Navbar() {
   const navRef = useRef();
@@ -36,11 +36,11 @@ function Navbar() {
         </a>
         {isNavOpen ? (
           <button className="nav-btn nav-close-btn" onClick={toggleNavbar}>
-            <CartIcon />
+            <MenuIcon />
           </button>
         ) : (
           <button className="nav-btn" onClick={toggleNavbar}>
-            <CartIcon />
+            <MenuIcon/>
           </button>
         )}
       </nav>

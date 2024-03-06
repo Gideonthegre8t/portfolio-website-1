@@ -149,9 +149,9 @@ nav a:hover {
   background: transparent;
   border: none;
   outline: none;
-  color: #ffffff;
-  visibility: visible;
+  visibility: hidden;
   font-size: 1.8rem;
+  
 }
 
 .icon {
@@ -801,10 +801,7 @@ input {
   .nav-btn {
     visibility: visible;
     position: relative;
-    /* margin-top: 3.5rem; */
-    margin-bottom: 70px;
-    margin-right:90px;
-    opacity: 1;
+    margin-top: 3.8rem;
   }
 
   .navigator {
