@@ -727,7 +727,7 @@ input {
   text-align: left;
 }
 
-@media (max-width: 452px) {
+@media (max-width: 500px) {
   body {
     margin: 0 auto;
     width: 452px;
@@ -799,8 +799,7 @@ input {
     border: none;
     outline: none;
     font-size: 1.2rem;
-
-    margin-top: 99rem;
+    margin-top: 62.5rem;
     left: 26rem;
     color: #fff;
     background: none;
@@ -849,7 +848,7 @@ input {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    margin-top: -3rem;
+    margin-top: -2rem;
   }
 
   .header-content1 {
