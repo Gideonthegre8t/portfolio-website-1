@@ -772,8 +772,8 @@ input {
   }
   .login-txt {
     margin: 0 auto;
-    padding: 8.5px;
-    margin-left: 1px;
+    padding: 7px;
+    margin-left:-20px;
   }
 
   .top2 {
@@ -798,7 +798,7 @@ input {
     border: none;
     outline: none;
     font-size: 1.2rem;
-    margin-bottom: -92rem;
+    margin-bottom: -93.5rem;
     left: 26rem;
     color: #fff;
     background: none;
