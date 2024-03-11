@@ -799,7 +799,8 @@ input {
     border: none;
     outline: none;
     font-size: 1.2rem;
-    margin-top: 62.5rem;
+
+    margin-top: 99rem;
     left: 26rem;
     color: #fff;
     background: none;
@@ -829,7 +830,7 @@ input {
   nav .nav-close-btn {
     position: absolute;
     top: 5%;
-    left: 80%;
+    left: 90%;
     margin-top: 0rem;
   }
 
