@@ -727,7 +727,7 @@ input {
   text-align: left;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   body {
     margin: 0 auto;
     width: 452px;
