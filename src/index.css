@@ -727,7 +727,7 @@ input {
   text-align: left;
 }
 
-@media (max-width: 600px) {
+@media  (max-width: 480px) {
   body {
     margin: 0 auto;
     width: 452px;
@@ -798,7 +798,7 @@ input {
     border: none;
     outline: none;
     font-size: 1.2rem;
-    margin-top: 92em;
+    margin-top: 82em;
     left: 26rem;
     color: #fff;
     background: none;
