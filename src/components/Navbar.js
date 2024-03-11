@@ -1,20 +1,21 @@
-import React from "react";
-import { useRef, useState } from "react";
-import MenuIcon from "./MenuIcon";
+import React, { useRef, useEffect } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar() {
   const navRef = useRef();
-  const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleNavbar = () => {
-    setIsNavOpen(!isNavOpen);
     navRef.current.classList.toggle("responsive_nav");
   };
 
   const handleClick = (event) => {
     event.preventDefault(); // Prevent default anchor behavior
   };
-  
+
+  // Add the 'responsive_nav' class by default
+  useEffect(() => {
+    navRef.current.classList.add("responsive_nav");
+  }, []);
 
   return (
     <div className="navigator">
@@ -34,15 +35,14 @@ function Navbar() {
         <a href="/#" onClick={handleClick}>
           CONTACT
         </a>
-        {isNavOpen ? (
-          <button className="nav-btn nav-close-btn" onClick={toggleNavbar}>
-            <MenuIcon />
-          </button>
-        ) : (
-          <button className="nav-btn" onClick={toggleNavbar}>
-            <MenuIcon/>
-          </button>
-        )}
+
+        <button className="nav-btn nav-close-btn" onClick={toggleNavbar}>
+          <FaTimes />
+        </button>
+
+        <button className="nav-btn" onClick={toggleNavbar}>
+          <FaBars />
+        </button>
       </nav>
     </div>
   );
