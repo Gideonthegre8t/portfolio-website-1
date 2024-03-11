@@ -40,7 +40,7 @@ function Navbar() {
           <FaTimes />
         </button>
 
-        <button className="nav-btn" onClick={toggleNavbar}>
+        <button className="nav-btn nav-open-btn" onClick={toggleNavbar}>
           <FaBars />
         </button>
       </nav>

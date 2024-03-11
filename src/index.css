@@ -144,7 +144,7 @@ nav a:hover {
 }
  
 .nav-btn {
-  visibility: hidden;
+  display: none;
 }
 
 .icon {
@@ -791,14 +791,14 @@ input {
     margin-left: 15px;
   }
   .nav-btn {
-    visibility: visible;
+    display: block;
     opacity: 1;
     position: absolute;
     cursor: pointer;
     border: none;
     outline: none;
     font-size: 1.2rem;
-    margin-bottom: -87rem;
+    margin-bottom: -99rem;
     left: 26rem;
     color: #fff;
     background: none;
@@ -1399,4 +1399,3 @@ input {
 .animate--slow {
   animation-duration: 3s;
 }
-
