@@ -1,25 +1,16 @@
-import React, { useRef, useEffect } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import React, { useState } from "react";
+import { FaBars } from "react-icons/fa";
 
 function Navbar() {
-  const navRef = useRef();
-
-  const toggleNavbar = () => {
-    navRef.current.classList.toggle("responsive_nav");
-  };
+  const [showLinks, setShowLinks] = useState(false);
 
   const handleClick = (event) => {
     event.preventDefault(); // Prevent default anchor behavior
   };
 
-  // Add the 'responsive_nav' class by default
-  useEffect(() => {
-    navRef.current.classList.add("responsive_nav");
-  }, []);
-
   return (
     <div className="navigator">
-      <nav className="navbar" ref={navRef}>
+      <nav className="navbar links" id={showLinks ? "hidden" : ""}>
         <a href="/#" onClick={handleClick}>
           HOME
         </a>
@@ -35,15 +26,10 @@ function Navbar() {
         <a href="/#" onClick={handleClick}>
           CONTACT
         </a>
-
-        <button className="nav-btn nav-close-btn" onClick={toggleNavbar}>
-          <FaTimes />
-        </button>
-
-        <button className="nav-btn nav-open-btn" onClick={toggleNavbar}>
-          <FaBars />
-        </button>
       </nav>
+      <button onClick={() => setShowLinks(!showLinks)} className="nav-btn">
+        <FaBars />
+      </button>
     </div>
   );
 }
