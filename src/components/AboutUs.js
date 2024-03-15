@@ -56,6 +56,8 @@ function AboutUs() {
             <img className="right-arrow" src={rightArrow} alt="arrow" />
             TAX & TRUSTS
           </p>
+
+          
         </div>
 
         <div className="recent-news">
