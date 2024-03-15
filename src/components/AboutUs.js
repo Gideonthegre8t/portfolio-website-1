@@ -2,6 +2,7 @@ import React from "react";
 import graphImage2 from "../assets/images/white-graph-image.png";
 import graphImage2phone from "../assets/images/white-graph-image-phone.png";
 import rightArrow from "../assets/images/right-arrow.png";
+import Copyright from "./Copyright";
 
 function AboutUs() {
   return (
@@ -87,6 +88,10 @@ function AboutUs() {
             </p>
           </div>
         </div>
+      </div>
+      <div>
+        {" "}
+        <Copyright />{" "}
       </div>
     </div>
   );
