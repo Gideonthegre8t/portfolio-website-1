@@ -6,7 +6,7 @@ import researchTrainingImage from "../assets/images/research-image.png";
 
 function About2() {
   return (
-    <section className="about2-container">
+    <section id="services" className="about2-container">
       <h1 className="about2-text1">WHAT WE DO</h1>
       <p className="about2-text2">
         FTA is dedicated to seeing you choose the right technology strategy

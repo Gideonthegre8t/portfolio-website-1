@@ -21,7 +21,7 @@ const ReachOutForm = () => {
   };
 
   return (
-    <div className="reach-us-container">
+    <div id="contact" className="reach-us-container">
       <div className="reach-us-text">
         <h2 className="reach-us-text1">REACH OUT TO US</h2>
         <p className="reach-us-text2">

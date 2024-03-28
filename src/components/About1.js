@@ -5,7 +5,7 @@ import graphImagephone from "../assets/images/graph-image-phone.png";
 
 function About1() {
   return (
-    <section className="about1-container">
+    <section id="about" className="about1-container">
       <div className="about1-story1">
         <h1 className="about1-text1">WHO WE ARE</h1>
         <p className=" about1-text2">

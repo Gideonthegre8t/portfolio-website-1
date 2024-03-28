@@ -6,7 +6,7 @@ import teamMemberphone from "../assets/images/team-member-phone-size.png";
 
 function Team() {
   return (
-    <div className="team-container">
+    <div id="team" className="team-container">
       <img className="team-wallpaper" src={teamWallpaper} alt="office-pics" />
       <img
         className="team-wallpaper-phone"
