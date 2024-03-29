@@ -112,6 +112,12 @@ body {
 .navigator {
   margin-right: 8.5rem;
   margin-bottom: 0.4rem;
+  position: fixed;
+  right: 3em;
+  z-index: 1;
+  background-color: #949494;
+  border-radius: 10px;
+  margin: 0 auto;
 }
 
 nav a {
@@ -812,7 +818,7 @@ input {
 
   .nav-btn {
     display: flex;
-    position: absolute;
+    position: fixed;
     right: 1rem;
     margin-top: -0.5rem;
     background: transparent;
@@ -820,12 +826,14 @@ input {
     cursor: pointer;
     border: none;
     outline: none;
-    color: #fff;
+    color: #000000;
     font-size: 1.2rem;
+    z-index: 1;
   }
 
   .navigator > #hidden {
     display: flex;
+    position: fixed;
   }
 
   .links {
