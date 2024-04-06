@@ -110,14 +110,11 @@ body {
 }
 
 .navigator {
-  margin-right: 8.5rem;
-  margin-bottom: 0.4rem;
-  position: fixed;
-  right: 3em;
   z-index: 1;
   background-color: #949494;
+  position: fixed;
+  margin-left: 45em;
   border-radius: 10px;
-  margin: 0 auto;
 }
 
 nav a {
